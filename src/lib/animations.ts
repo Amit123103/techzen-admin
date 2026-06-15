@@ -4,7 +4,7 @@ import { Variants } from "framer-motion";
 // Framer Motion Animation Presets
 // ========================================
 
-const customEase = [0.25, 1, 0.5, 1]; // Premium cubic bezier
+const customEase: [number, number, number, number] = [0.25, 1, 0.5, 1]; // Premium cubic bezier
 
 export const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
