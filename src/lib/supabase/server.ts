@@ -39,4 +39,4 @@ export const supabaseAdmin = new Proxy({}, {
     // @ts-ignore
     return typeof client[prop] === 'function' ? client[prop].bind(client) : client[prop];
   }
-}) as ReturnType<typeof createSupabaseClient>;
+}) as any;
