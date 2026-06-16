@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Loader2, Inbox, Eye, Trash2, Github, Linkedin, Globe, Phone, Mail, User } from "lucide-react";
+import { Loader2, Inbox, Eye, Trash2, Code, Link, Globe, Phone, Mail, User } from "lucide-react";
 
 interface JobApplication {
   id: string;
@@ -186,13 +186,13 @@ export default function ApplicationsAdminPage() {
                   <h3 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-muted)]">Links</h3>
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
-                      <Linkedin className="w-4 h-4 text-[#0A66C2]" />
+                      <Link className="w-4 h-4 text-[#0A66C2]" />
                       {selectedApp.portfolio_url ? (
                         <a href={selectedApp.portfolio_url} target="_blank" rel="noreferrer" className="text-[var(--color-accent)] hover:underline truncate">LinkedIn / Portfolio</a>
                       ) : <span className="text-[var(--color-muted)]">N/A</span>}
                     </div>
                     <div className="flex items-center gap-3">
-                      <Github className="w-4 h-4 text-[var(--color-text)]" />
+                      <Code className="w-4 h-4 text-[var(--color-text)]" />
                       {selectedApp.github_url ? (
                         <a href={selectedApp.github_url} target="_blank" rel="noreferrer" className="text-[var(--color-accent)] hover:underline truncate">GitHub Profile</a>
                       ) : <span className="text-[var(--color-muted)]">N/A</span>}
