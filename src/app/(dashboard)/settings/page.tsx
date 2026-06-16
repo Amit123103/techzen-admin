@@ -1,3 +1,5 @@
+import { SocialSettingsForm } from "@/components/admin/SocialSettingsForm";
+
 export default function SettingsPage() {
   return (
     <div className="space-y-6 max-w-4xl">
@@ -74,6 +76,9 @@ export default function SettingsPage() {
             Update Password
           </button>
         </div>
+      </div>
+      <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl shadow-sm overflow-hidden">
+        <SocialSettingsForm />
       </div>
     </div>
   );

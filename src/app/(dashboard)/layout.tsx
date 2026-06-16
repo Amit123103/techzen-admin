@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Link from "next/link";
-import { LayoutDashboard, Users, FileText, Settings, MessageSquare } from "lucide-react";
+import { LayoutDashboard, Users, FileText, Settings, MessageSquare, Briefcase, Inbox } from "lucide-react";
 import { SignOutButton } from "@/components/ui/SignOutButton";
 
 const navigation = [
@@ -8,6 +8,8 @@ const navigation = [
   { name: "Subscribers", href: "/subscribers", icon: Users },
   { name: "Testimonials", href: "/testimonials", icon: MessageSquare },
   { name: "Broadcast Email", href: "/broadcast", icon: FileText },
+  { name: "Job Roles", href: "/careers", icon: Briefcase },
+  { name: "Job Applications", href: "/applications", icon: Inbox },
   { name: "Settings", href: "/settings", icon: Settings },
 ];
 
